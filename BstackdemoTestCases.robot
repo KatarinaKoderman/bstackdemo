@@ -15,6 +15,3 @@ Buy phones
     Then Go to checkout    ${buyer}
     And Download receipt
     [Teardown]    And Logout
-
-# TestCase 01
-#     Open Browser To Sign In
