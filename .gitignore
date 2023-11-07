@@ -1,0 +1,4 @@
+# Ignore RF working directory #
+log.html
+output.xml
+report.html
