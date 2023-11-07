@@ -21,7 +21,7 @@ Select an item and add to chart
     ...    /following-sibling::div[@class="shelf-item__buy-btn"]
     Click Element    ${xpath_buy_item}
 
-Checkout
+Go to checkout
     [Arguments]    ${buyer}
     Wait Until Element Is Visible    xpath=//div[@class="buy-btn" and text()="Checkout"]
     Click Element    xpath=//div[@class="buy-btn" and text()="Checkout"]
