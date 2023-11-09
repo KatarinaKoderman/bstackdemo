@@ -1,4 +1,9 @@
 *** Variables ***
+
+### Input variables ###
+${myusername} =    demouser
+${mypassword} =    testingisfun99
+
 ${item01} =    iPhone 12 Mini
 ${item02} =    iPhone 11 Pro
 ${item03} =    One Plus 6T
