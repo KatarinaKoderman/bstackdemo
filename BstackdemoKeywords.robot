@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 Open bstack website
     [Arguments]    ${url}
     Open Browser    ${url}    chrome
-Login
+Login to bstackwebside with given credentials
     [Arguments]    ${locator_signin}    ${locator_username_input}    ${locator_password_input}    ${locator_login}    ${username}    ${password}
     Click Link    ${locator_signin}
     Wait Until Element Is Visible    ${locator_username_input}
@@ -29,7 +29,7 @@ Select items from list and add them to chart
         Select an item and add to chart    ${shelf}    ${item}
     END
 
-Go to checkout
+Go to checkout and add buyer information
     [Arguments]    ${locator_checkout}    ${locator_checkout_form}    ${locator_buyer}    ${locator_checkout_continue}    ${buyer}
     Wait Until Element Is Visible    ${locator_checkout}
     Click Element    ${locator_checkout}
@@ -41,14 +41,14 @@ Go to checkout
     Input Text    ${locator_buyer}[4]    ${buyer}[4]
     Click Button    ${locator_checkout_continue}
     
-Download receipt
+Download receipt to downloads folder
     [Arguments]    ${locator_pdf}    ${locator_continue_shopping}    ${locator_logout}
     Wait Until Element Is Visible    ${locator_pdf}
     Click Link    ${locator_pdf}
     Click Button    ${locator_continue_shopping}
     Wait Until Element Is Visible    ${locator_logout}
 
-Logout
+Logout and close browser
     [Arguments]    ${locator_logout}
     Click Element    ${locator_logout}
     Close Browser
